@@ -40,22 +40,21 @@ h3 {
 p {
 	font-size: .875em;
 	line-height: 21px;
-    padding: 0 30px;
+    
 }
 
 /*The widths are in a percentage!*/
 header {
-	
 	border-bottom: 3px solid #77a466;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
 	width: 100%;
 }
 
 header h1 {
-	
+	border-bottom: 3px solid #77a466;
 	margin: 0;
 	padding: 38px 0;
 }
@@ -64,23 +63,31 @@ header h1 span {
 }
 
 header nav {
-	flex-flow: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 	padding: 46px 0;
 }
+
 header nav ul {
 	margin: 0;
 	padding: 0;
 }
+
 header nav ul li {
 	text-transform: uppercase;
+	list-style-type: none;
 	font-weight: 700;
 	font-size: .875em;
+	line-height: 3em;
 	padding: 0 10px;
-	display: inline;
+	flex-basis: 50%;
 }
+
 header nav ul li a{
-	text-decoration: none;
 	color:#77a466;
+	text-decoration: none;
 }
 
 /*The widths are in a percentage!*/
@@ -89,23 +96,15 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	width: 100%;
 }
 
-.main-image {
-	
-	
-}
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
 
-.main-title {
-	
-
-}
 .main-title h2 {
 	text-align: left;
 	padding: 5px 0;
@@ -120,29 +119,10 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	border-top: 1px solid #eee;
-}
-
-.section-one {
-	align-self: stretch;
-}
-.section-one h3 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
-.section-three {
-	align-self: stretch;
-}
-
-.section-two h3,
-.section-three h3 {
-	padding: 10px 30px;
+	justify-content: center;
+	align-items: center;
 }
 
 .menu {
@@ -180,4 +160,78 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+/* TABLET Styling */
+@media all and (min-width: 768px) {
+	.bottom-section {
+		justify-content: center;
+		align-items: center;
+		flex: row wrap;
+	}
+	.section-one {
+		justify-content: center;
+		align-items: center;
+		align-self: stretch;
+		width: 33%;
+	}
+	
+	.section-two {
+		justify-content: center;
+		align-items: center;
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		width: 33%;
+	}
+	.section-three {
+		justify-content: center;
+		align-items: center;
+		align-self: stretch;
+		width: 33%;
+	}
+	.section-one h3 {
+		padding: 10px 0;
+	}
+	
+	.section-two h3,
+	.section-three h3 {
+		padding: 10px 30px;
+	}
+
+}
+/* DESKTOP Styling */
+@media all and (min-width: 1200px) {
+	.bottom-section {
+		justify-content: center;
+		align-items: center;
+		flex: wrap;
+	}
+	.section-one {
+		justify-content: center;
+		align-items: center;
+		align-self: stretch;
+		width: 33%;
+	}
+	
+	.section-two {
+		justify-content: center;
+		align-items: center;
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		width: 33%;
+	}
+	.section-three {
+		justify-content: center;
+		align-items: center;
+		align-self: stretch;
+		width: 33%;
+	}
+	.section-one h3 {
+		padding: 10px 0;
+	}
+	
+	.section-two h3,
+	.section-three h3 {
+		padding: 10px 30px;
+	}
 }
