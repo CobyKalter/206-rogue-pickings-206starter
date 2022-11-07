@@ -59,6 +59,7 @@ header h1 {
 	padding: 38px 0;
 	flex-flow: row;
 }
+
 header h1 span {
 	color: #77a466;
 }
@@ -204,22 +205,16 @@ footer span {
 		flex-flow: row;
 	}
 	.section-one {
-		justify-content: center;
-		align-items: center;
 		width: 33%;
 		align-self: stretch;
 	}
 	
 	.section-two {
-		justify-content: center;
-		align-items: center;
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
 		width: 33%;
 	}
 	.section-three {
-		justify-content: center;
-		align-items: center;
 		width: 33%;
 		align-self: stretch;
 	}
@@ -279,23 +274,17 @@ footer span {
 		flex: wrap;
 	}
 	.section-one {
-		justify-content: center;
-		align-items: center;
 		align-self: stretch;
 		width: 33%;
 	}
 	
 	.section-two {
-		justify-content: center;
-		align-items: center;
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
 		width: 33%;
 		align-self: stretch;
 	}
 	.section-three {
-		justify-content: center;
-		align-items: center;
 		align-self: stretch;
 		width: 33%;
 	}
